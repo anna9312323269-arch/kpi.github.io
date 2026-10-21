@@ -43,6 +43,3 @@ function goes_in() {
 
         const elementSend = document.getElementById("send");
         elementSend.addEventListener('click', send)
-
-        var url = + "A=" + A + "&B=" + B + "&C=" + C + "&M=" + M + "K=" +K + "&result=" + result;
-        window.location.href = url;
