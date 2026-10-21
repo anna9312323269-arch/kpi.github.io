@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Формы</title>
+    <style>
+        .menu-list1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            gap: 50px;
+            font-family: 'Poiret One', cursive, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: x-large;
+            position: sticky;
+            top: 0;
+            z-index: 300;
+            background-color:hsla(81, 45%, 74%, 0.397);
+
+        }
+        .active {
+            background-color:peachpuff;
+        }
+        h1 {
+           color:rgb(126, 88, 113);
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+           font-family: 'Roboto';
+        }
+        h2 {
+            font-family: 'GoogleSans';
+            color: rgb(66, 58, 58);
+            font-size: 30px; }
+        body {
+            background: linear-gradient(to right, rgb(136, 204, 181), rgb(194, 117, 153), rgb(130, 169, 187)) 
+        }
+        .item a:hover {
+            color: brown;
+        }
+        
+
+        .nav-link1 a.hover{
+            color:blueviolet;
+        }
+        .photo a:hover {
+            color: rgb(48, 4, 11);
+            
+            }
+        h3 {
+            font-size: small
+        }
+        h5 {
+            font-size: large;
+            font: "Google Sans";
+            color:rgb(126, 88, 113);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+        }
+        
+
+    </style>
+</head>
+<script> 
+const elementSend = document.getElementById("submit");
+elementSend.addEventListener('click', sendData);
+</script>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <ul class="menu-list1">
+            <li class="item"> <a href="./probn.html" >Навигация</a> </li> 
+            <li class="item"> <a href="./alg.html">Алгоритмическая задача</a> </li>
+            <li class="item"> <a href="./form.html" class="active">Формы</a> </li>
+            <li class="item"> <a href="./tables.html">Таблица</a> </li>
+            <li class="item"> <a href="./pasdom.html">DOM</a> </li>
+            <li class="item"> <a href="./passport.html">Паспорт</a> </li>
+        </ul>   
+    </nav>
+    <h5 align="center">Закажите редкую алоказию с доставкой на ваш адрес! </h5>
+    <h5> Личные данные</h5>
+    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <!--<form action="https://httpbin.org/post" method='post' >-->        
+        <p>Для поисковика:<input type="hidden" name="q" value="search"></p>
+        <p>Фамилия: <input type="Text" name="last_name" size=20 value="Зеленый"></p>
+        <p>Имя: <input type="Text" name="last_name" size=20 value="Лист"></p>
+        <p>Группа: <input type="Number" name="group" size=20 value="252"></p>
+        <p>Телефон: <input type="tel" name="phone" size=20 value="+78005553535"></p>
+        <p>Возраст: <input type="Number" name="age" size=20 value="17"></p>
+        <p>Электронная почта: <input type="email" name="email" size=20 value="i_love_plants@mail.ru"></p>
+        <p>Дата: <input type="date" name="user_date" value='2026-10-21'></p>
+
+    <h5> Заказ </h5>
+
+        <p>Сорт 
+            <select name="sorts">
+                <OPTION value="1">Polly Pink var.</OPTION>
+                <OPTION value="2">Melo</OPTION>
+                <OPTION value="3">Longiloba </OPTION>
+                <OPTION value="4" disabled>Fraidek Tattoo (нет в наличии)</OPTION>
+                <OPTION value="5">Gageana Aurea</OPTION>
+                <OPTION value="6">Teletubbies</OPTION>
+            </select>
+        </p>
+        <p>Способ получения заказа:
+            <input type="Radio" name="get" value="Moscow"> Курьером
+            <input type="Radio" name="get" value="sam" checked> Самовывоз
+            <input type="Radio" name="get" value="post" > Посылкой 
+        </p>
+        <p>Добавить к заказу:
+            <input type="Checkbox" name="add" value="recl" checked> Рекламный буклет
+            <input type="Checkbox" name="experience" value="coldweather"> Утепление (в холодный период года)
+        </p>
+
+        <p> Комментарий к заказу:
+            <br>
+            <TEXTAREA cols=30 rows=4 name="textarea">Ваши пожелания по...</TEXTAREA>
+        </p>
+
+        <p>Дата: <input type="date" name="user_date" value='2026-10-21'></p>
+        <p>Пароль: <input type="Password" name="password" size=10 value="0505"></p>
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+        <p>Название файла: <input type="Техт" name="file_name" value="Green_zakaz.txt" size='30'></p>
+
+        <p> Тип записи в файл:<select name="010_mode">
+                <OPTION value="a"> дозаписать в файл</OPTION>
+                <OPTION value="w"> очисить файл и записать в файл</OPTION>
+            </select></p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+
+    </form>
+</body>
+</html>

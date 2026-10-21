@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Заменяем кириллицу на латиницу</title>
+    <style>
+        .menu-list1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            gap: 50px;
+            font-family: 'Poiret One', cursive, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: x-large;
+            position: sticky;
+            top: 0;
+            z-index: 300;
+            background-color:hsla(81, 45%, 74%, 0.397);
+
+        }
+        h1 {
+           color:rgb(126, 88, 113);
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+           font-family: 'Roboto';
+        }
+        h2 {
+            font-family: 'GoogleSans';
+            font-size: 30px; }
+        body {
+            background: linear-gradient(to right, rgb(136, 204, 181), rgb(194, 117, 153), rgb(130, 169, 187)) 
+        }
+        .item a:hover {
+            color: brown;
+        }
+
+        .nav-link1 a.hover{
+            color:blueviolet;
+        }
+        .photo a:hover {
+            color: rgb(48, 4, 11);}
+
+        .active {
+            background-color:peachpuff;
+        }
+        .surname {
+            padding-right: 750px;
+            padding-top: 120px;
+        }
+
+        .name {
+            padding-right: 750px;
+            padding-top: 1px;
+        }
+
+        body {
+            background-image: "./pasport.jpg";
+            
+        }
+            
+    </style>
+</head>
+    <nav class="navbar navbar-light bg-light">
+        <ul class="menu-list1">
+            <li class="item"> <a href="./probn.html">Навигация</a> </li> 
+            <li class="item"> <a href="./alg.html">Алгоритмическая задача</a> </li>
+            <li class="item"> <a href="./form.html">Формы</a> </li>
+            <li class="item"> <a href="./tables.html">Таблица</a> </li>
+            <li class="item"> <a href="./dom.html">DOM</a> </li>
+            <li class="item"> <a href="./passport.html" class="active">Паспорт</a> </li>
+            <a href = "#" onclick="window.open('./pic1.jpg', '_blank'); return False;"><img src="https://img.magnific.com/free-vector/organic-flat-houseplant-collection_23-2148915161.jpg" style ="height:50px;border:solid;"> </a> 
+        </ul>   
+    </nav> 
+    <div class = "surname" id="surname"> Николаева </div>
+    <div class = "name" id="name"> Анна </div>
+    <div class = "lastname" id="lastname"> Львовна</div>
+    <div class = "sex" id="sex"> Жен.</div>
+    <div class="dateofbirth" id="dateofbirth"> 03.03.2007</div>
+    <div class="img"> <img src="./pasport.jpg" height="400" align="top"></div>
+    <button id="changebtn">  Заменить </button>
+    
+    <script src="passport.js"></script>
+</body>

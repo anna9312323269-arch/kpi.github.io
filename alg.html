@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задача </title>
+    <style>
+        .menu-list1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            gap: 50px;
+            font-family: 'Poiret One', cursive, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: x-large;
+            position: sticky;
+            top: 0;
+            z-index: 300;
+            background-color:hsla(81, 45%, 74%, 0.397);
+
+        }
+        h1 {
+           color:rgb(126, 88, 113);
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+           font-family: 'Roboto';
+        }
+        h2 {
+            font-family: 'GoogleSans';
+            color: rgb(66, 58, 58);
+            font-size: 30px; }
+        body {
+            background: linear-gradient(to right, rgb(136, 204, 181), rgb(194, 117, 153), rgb(130, 169, 187)) 
+        }
+        .item a:hover {
+            color: brown;
+        }
+        .item a:active {
+            color:burlywood;
+            background: rgba(194, 117, 153, 0.5);
+            
+        }
+
+        .nav-link1 a.hover{
+            color:blueviolet;
+        }
+        .photo a:hover {
+            color: rgb(48, 4, 11);
+            
+            }
+        h3 {
+            font-size: small
+        }
+        .active {
+            background-color:peachpuff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <ul class="menu-list1">
+            <li class="item"> <a href="./probn.html" >Навигация</a> </li> 
+            <li class="item"> <a href="./alg.html" class="active">Алгоритмическая задача</a> </li>
+            <li class="item"> <a href="./form.html">Формы</a> </li>
+            <li class="item"> <a href="./tables.html">Таблица</a> </li>
+            <li class="item"> <a href="./dom.html">DOM</a> </li>
+            <li class="item"> <a href="./passport.html">Паспорт</a> </li>
+        </ul>   
+    </nav>
+    <p> Имеется коробка (в которую Вы очень хотите положить алоказии) со сторонами: A × B × C. Определить, пройдёт ли она в дверь с размерами M × K.</p>
+    <form id="UserEnter" action="https://www.google.com/"  name="UserEnter" target="_blank">
+        <li>A: <input id="a" name="a"  type="number" value="0"></li>
+        <li>B: <input id="b"  name="b" type="number" value="0"></li>
+        <li>C: <input id="c"  name="c" type="number" value="0"></li>
+        <hr>
+        <li>M: <input id="m" type="number" value="0"></li>
+        <li>K: <input id="k" type="number" value="0"></li>
+        <li>Проверить: <input id="verify" type="button" onclick = "goes_in()" value="Проверить"></li>
+        Результат: <input id="result" name="result" value="?">
+        <li>Отправить: <input id="send" type="button" onclick = "send()" value="Отправить"></li>
+    </form>
+    <script src="alg.js"></script>
+</body>
+</html>
