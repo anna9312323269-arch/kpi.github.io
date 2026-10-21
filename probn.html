@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <style>
+        .menu-list1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            gap: 50px;
+            font-family: 'Poiret One', cursive, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: x-large;
+            position: sticky;
+            top: 0;
+            z-index: 300;
+            background-color:hsla(81, 45%, 74%, 0.397);
+
+        }
+        h1 {
+           color:rgb(126, 88, 113);
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+           font-family: 'Roboto';
+        }
+        h2 {
+            font-family: 'GoogleSans';
+            color: rgb(66, 58, 58);
+            font-size: 30px; }
+        body {
+            background: linear-gradient(to right, rgb(136, 204, 181), rgb(194, 117, 153), rgb(130, 169, 187)) 
+        }
+        .item a:hover {
+            color: brown;
+        }
+
+
+        .nav-link1 a.hover{
+            color:blueviolet;
+        }
+        .photo a:hover {
+            color: rgb(48, 4, 11);
+            
+            }
+        .h3 {
+            font-size: large;
+            font: "Mono";
+            color:beige;
+            text-shadow:rgba(29, 16, 16, 0.7);
+        }
+        .colonk {
+            font-family: "Verdana";
+            font-size: 25px;
+            color:rgb(48, 4, 11);
+        }
+        .active {
+            background-color:peachpuff;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <ul class="menu-list1">
+            <li class="item"> <a href="./probn.html" class="active">Навигация</a> </li> 
+            <li class="item"> <a href="./alg.html">Алгоритмическая задача</a> </li>
+            <li class="item"> <a href="./form.html">Формы</a> </li>
+            <li class="item"> <a href="./tables.html">Таблица</a> </li>
+            <li class="item"> <a href="./dom.html">DOM</a> </li>
+            <li class="item"> <a href="./passport.html">Паспорт</a> </li>
+            <a href = "#" onclick="window.open('./pic1.jpg', '_blank'); return False;"><img src="https://img.magnific.com/free-vector/organic-flat-houseplant-collection_23-2148915161.jpg" style ="height:50px;border:solid;"> </a> 
+        </ul>   
+    </nav>
+    <br>
+    <h1>  -> Здесь можно узнать кое-что про алоказии!</h1>
+    <h3> ...про их виды, рекомендации по уходу за ними и их особенности, </h3>
+    <h3> а также рассчитать, пройдет ли <b>ваша</b> коробка для алоказий в дверь!</h3>
+    <div class="container"
+    <header style="padding-top:70px; "> 
+		<div class="container"> 
+            <div class="row">
+			    <div class="col-md-3" style="border: thin outset;" id="about">
+                    <h2> Алока́зия (лат. Alocásia) — род корневищных или клубневых многолетних растений семейства Ароидные (Araceae). Известно около 90 видов, произрастающих в тропической и субтропической Азии и восточной Австралии. </h2>
+                    <hr>
+                    <h2> <a href ="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%BE%D0%BA%D0%B0%D0%B7%D0%B8%D1%8F" target="_blank">Подробнее </a></h2>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <a class = "photo" href="https://www.letto.ru/blog/rasteniya/alokaziya_polli_ukhod_v_domashnikh_usloviyakh_peresadka_i_razmnozhenie/" target="_self" style="color: black; ">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_8Ix-p-sSXJirxXGdR0dWMqyBcnQE3CXptFZl-HVa3g2M0aDCnRa6uuIYItkMcKbLezf5apXynxocJXIu7OtZsulbtX7LuvwKIfDS4k&s=10" style="height:320px; margin:20px 20px 40px 20px; border: solid; " >
+                        </a>
+                        <figcaption style="text-align:center; margin: 0;"> <i>Alocasia Polly </i></figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3">
+                    <figure>
+                        <a href="https://exotiks.ru/cataloglist/dekorativno-listvennye-rasteniya/alokazii/alokaziya-zhaklin-alocasia-jacklyn-d6sm/" target="_self" style="color: black; ">
+                            <img src="https://luxuryplants.ru/wa-data/public/shop/products/04/76/27604/images/96645/96645.1500x0.jpg" style="height:200px; margin:20px 20px 40px 20px; border: solid; " >
+                        </a>
+                        <figcaption style="text-align:center;"> <i>Alocasia Jacklyn </i></figcaption>
+                    </figure>
+                </div>
+            </div>
+    </div>
+    <br>
+    <div class="container" style= "border: medium dashed green;"> 
+            <div class="row">
+			    <div class="colonk">
+                    <ol> Советы по уходу за вашей алоказией:
+                        <li> По расположению, из окон лучше всего подойдут:</li>
+                            <ul> Восточные</ul>
+                            <ul> Западные</ul> 
+                        <li>Оптимальная температура содержания - 20-25°, ни в коем случае не меньше 16°.</li>
+                        <li> <a href= "https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C"> Влажность </a> воздуха должна быть высокой, около 60-80%. </li>
+                        <li>Важен регулярный полив: почва всегда должна быть слегка влажной, но не мокрой насквозь.</li>
+                    </ol>    
+                </div>
+            </div>
+        </div> 
+    <br>  
+    <a href=#top type="button" style="border-radius: 5px; height: 400px; font-family: 'Lato'; size:large; color:azure;">Наверх</a> <br>
+    <a href=#about type="button" style="border-radius: 5px; height: 400px; font-family: 'Lato'; size:large; color:azure;">К описанию</a>
+</body>
